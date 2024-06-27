@@ -26,9 +26,11 @@ async function postRequestSentiment(inputText) {
   }
 }
 
-document.querySelector(".form__news_text").addEventListener("submit", (_) => {
-  // event.preventDefault();
-  const inputText = document.getElementById("analyze_text").value;
-  postRequestSentiment(inputText);
-  console.log("worked");
-});
+document
+  .querySelector(".form__news_text")
+  .addEventListener("submit", (event) => {
+    event.preventDefault();
+    const inputText = document.getElementById("analyze_text").value;
+    postRequestSentiment(inputText);
+    console.log("worked");
+  });
