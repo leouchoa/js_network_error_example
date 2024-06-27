@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="./styles/styles.css" rel="stylesheet" />
+  </head>
+  <body class="page">
+    <div class="container">
+      <div class="container__header">Header Here</div>
+      <div class="container__main">
+        <div class="container__form">
+          <p class="form__description">Form with button here</p>
+          <form class="form__news_text">
+            <!-- <label for="subsc"></label> -->
+            <input
+              type="text"
+              id="analyze_text"
+              name="analyze_text"
+              class="form__input"
+              placeholder="text here!"
+            />
+            <button class="button button__analyze" type="submit">
+              Analyze
+            </button>
+          </form>
+        </div>
+        <div class="container__results">
+          <div class="menu__title">Analysis Results</div>
+          <div class="menu__results">
+            <ul class="results__list">
+              <li class="results__item" id="sentiment">
+                <p>Sentiment: score_tag</p>
+              </li>
+              <li class="results__item" id="agreement">
+                <p>Agreement</p>
+              </li>
+              <li class="results__item" id="subjectivity">
+                <p>Subjectivity</p>
+              </li>
+              <li class="results__item" id="confidence">
+                <p>Confidence</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container__footer">Footer Here</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
